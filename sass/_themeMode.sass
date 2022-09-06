@@ -1,0 +1,15 @@
+.themeMode
+    z-index: 10
+    position: relative
+    input
+        position: fixed
+        content: url("../assets/images/themeMode/darkMode.webp")
+        margin: 30px 30px
+        bottom: 0
+        right: 0
+        appearance: none
+        display: block
+        width: 50px
+        height: 50px
+    input[type="checkbox"]:checked
+        content: url("../assets/images/themeMode/lightMode.webp")

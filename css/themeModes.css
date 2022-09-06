@@ -1,0 +1,76 @@
+:root {
+    --color-primary: #041b32;
+    --color-secondary: #80c32e;
+    --color-contrast: #3e5c79;
+    --color-bg: #010a13;
+    --navigation-color: #011120;
+
+    --default-text-color: #fff;
+    --active-text-color: #fff;
+    --deactivated-text-color: #3e5c79;
+
+    --bloom-color: #00d3ff;
+}
+
+.lightMode {
+    --color-primary: #dfdfdf;
+    --color-secondary: #7f007f;
+    --color-contrast: #000000;
+    --color-bg: #b9b9b9;
+    --navigation-color: #cecece;
+
+    --default-text-color: #000;
+    --active-text-color: #000;
+    --deactivated-text-color: #979797;
+
+    --bloom-color: #2f2f2f;
+}
+
+body {
+    color: var(--default-text-color);
+}
+
+.header .tabs__nav {
+    background-color: var(--navigation-color);
+}
+
+.header .tabs__nav li {
+    color: var(--deactivated-text-color);
+}
+
+.header .tabs__nav li:hover {
+    color: var(--active-text-color);
+}
+
+.header .tabs__nav .tabs__link.active li {
+    color: var(--active-text-color);
+}
+
+.header .tabs__nav .tabs__link.active::after {
+    background-color: var(--color-secondary);
+}
+
+.section--title {
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.section--container .item {
+    background-color: var(--color-primary);
+}
+
+.section--container .item:hover {
+    box-shadow: 0px 0px 5px var(--bloom-color);
+}
+
+.section--container .item h3{
+    border-bottom: 2px solid var(--color-contrast);
+}
+
+.header {
+    background: var(--color-primary);
+    border-bottom: 1px solid var(--color-contrast);
+}
+
+.main {
+    background-color: var(--color-bg);
+}
