@@ -1,7 +1,7 @@
 .themeMode
     z-index: 10
     position: relative
-    input
+    .themeModeToggle
         position: fixed
         content: url("../assets/images/themeMode/darkMode.webp")
         margin: 30px 30px
@@ -11,5 +11,7 @@
         display: block
         width: 50px
         height: 50px
-    input[type="checkbox"]:checked
-        content: url("../assets/images/themeMode/lightMode.webp")
+        &--checked
+            content: url("../assets/images/themeMode/lightMode.webp")
+        &:hover
+            cursor: pointer
