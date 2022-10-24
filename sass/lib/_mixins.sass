@@ -268,7 +268,7 @@
 	$w-min: strip-unit($w-min)
 	$w-max: strip-unit($w-max)
 
-	$k: ($f-max - $f-min)/($w-max - $w-min)
+	$k: calc(($f-max - $f-min) / ($w-max - $w-min))
 	$b: $f-min - $k * $w-min
 
 	$b: $b + $units

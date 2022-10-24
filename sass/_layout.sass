@@ -34,6 +34,8 @@
 .section
     position: relative
     padding: 10px 50px
+    +max-screen(420px)
+        padding: 10px 10px
     &--header
         padding: 123px 50px 0
     &--title
@@ -41,15 +43,18 @@
         text-align: center
         font-weight: 700
     &--container
-        display: flex
-        flex-wrap: wrap
-        justify-content: flex-start
+        display: grid
+        grid-template-columns: repeat(5,1fr)
         gap: 15px
         padding: 20px 0px
+        +max-screen($breakpoint-xxl)
+            grid-template-columns: repeat(3,1fr)
+        +max-screen($breakpoint-lg)
+            grid-template-columns: repeat(2,1fr)
+        +max-screen($breakpoint-sm)
+            grid-template-columns: minmax(100px, 1fr)
         .item
             display: inline-block
-            // (100% - ($items-count(5) * $items-gap(15px)) / 100%) * 20% 
-            width: calc(calc(calc(100% - 60px) / 100) * 20)
             border-radius: 10px
             overflow: hidden
             cursor: pointer
@@ -147,17 +152,8 @@
             padding-bottom: 200px
             +max-screen($breakpoint-sm)
                 padding-bottom: 170px
-    &l
-    &r
-    &x
-    &y
 
 ._m
-    &t
-    &b
-    &l
-    &r
-    &x
     &y
         &-25
             margin-top: 25px

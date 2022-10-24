@@ -10,8 +10,8 @@
 
 .header
 	.row
-    	min-height: 91px
-    	align-items: center
+		min-height: 91px
+		align-items: center
 	.frame 
 		max-width: 100%
 		.title
@@ -33,7 +33,7 @@
 			padding: 0 50px
 			max-width: 100%
 			align-items: center
-			overflow-x: scroll
+			overflow-x: auto
 			li
 				position: relative
 				display: inline-block
@@ -44,8 +44,9 @@
 				text-align: center
 				text-transform: uppercase
 				transition: 0.3s
+				white-space: nowrap
 				&:hover
-            		cursor: pointer
+					cursor: pointer
 			.tabs__link
 				&.active
 					&::after

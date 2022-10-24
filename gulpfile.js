@@ -1,7 +1,7 @@
 "use strict";
 
 const gulp            = require('gulp');
-const sass            = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const concat          = require('gulp-concat');
 const prefix          = require('gulp-autoprefixer');
 const cssnano         = require('gulp-cssnano');
