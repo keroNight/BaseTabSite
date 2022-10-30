@@ -30,6 +30,15 @@ body {
     color: var(--default-text-color);
 }
 
+.header {
+    background: var(--color-primary);
+    border-bottom: 1px solid var(--color-contrast);
+}
+
+.main {
+    background-color: var(--color-bg);
+}
+
 .header .tabs__nav {
     background-color: var(--navigation-color);
 }
@@ -54,23 +63,18 @@ body {
     border-bottom: 1px solid var(--color-secondary);
 }
 
-.section--container .item {
+.itemCard {
     background-color: var(--color-primary);
 }
 
-.section--container .item:hover {
+.itemCard:hover {
     box-shadow: 0px 0px 5px var(--bloom-color);
 }
 
-.section--container .item h3{
+.itemCard h3{
     border-bottom: 2px solid var(--color-contrast);
 }
 
-.header {
-    background: var(--color-primary);
-    border-bottom: 1px solid var(--color-contrast);
-}
-
-.main {
-    background-color: var(--color-bg);
+.item__content .content {
+    background-color: var(--color-primary);
 }

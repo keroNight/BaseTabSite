@@ -3,6 +3,7 @@ import LazyLoad from 'vanilla-lazyload';
 
 // Parts
 import { tabs } from './parts/tabs';
+import { itemCard } from './parts/itemCard';
 
 function log() {
     console.log(window);
@@ -47,6 +48,7 @@ window.onload = function(){
 };
 
 tabs();
+itemCard();
 toggle_theme();
 
 new LazyLoad();
