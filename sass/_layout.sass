@@ -104,19 +104,27 @@
         overflow-y: auto
         width: 100vw
         padding: 60px
+        +max-screen($breakpoint-md)
+            padding: 0px
     .content
         height: auto
         margin: auto
         max-width: 800px
         min-height: 500px
-        padding-bottom: 60px 
+        padding-bottom: 60px
         border-radius: 10px
         overflow: hidden
+        +max-screen($breakpoint-md)
+            max-width: 100%
+            margin: 0
+            border-radius: 0px
         h3
             font-size: 28px
             padding: 36px 0px 24px
         .description
             margin: 0 60px
+            +max-screen($breakpoint-md)
+                margin: 30px 25px 0 25px
             &--image
                 height: 100%
                 top: 0
@@ -125,6 +133,9 @@
                 height: 100%
                 background-size: cover
                 background-position: 50% 50%
+                +max-screen($breakpoint-md)
+                    width: auto
+                    height: auto
                 &:before
                     content: ''
                     display: block
